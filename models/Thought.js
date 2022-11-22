@@ -5,7 +5,14 @@ const thoughtSchema = new mongoose.Schema({
     createdAt: {type: Date, default: Date.now},
     username: {type: String, required: true},
     reactions: [reactionSchema]
-});
+    },
+    {
+        toJSON: {
+            virtuals: true,
+        },
+        id: false,
+    }    
+);
 
 const Thought = mongoose.model('Thought', thoughtSchema);
 
