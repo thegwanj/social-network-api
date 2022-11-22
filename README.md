@@ -32,4 +32,4 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 ## Links
 Screencastify Video: 
 
-GitHub Repo: https://github.com/thegwanj/employee-tracker
+GitHub Repo: https://github.com/thegwanj/social-network-api
