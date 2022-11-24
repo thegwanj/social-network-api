@@ -1,20 +1,18 @@
 const router = require('express').Router();
+const {getUsers, getSingleUser, createUser, updateUser, deleteUser} = require('../../controllers/userController');
 
 module.exports = router;
-// GET /
+// GET all users
+router.route('/').get(getUsers).post(createUser);
 
-// User.find()
+// GET single user
+router.route('/:userId').get(getSingleUser);
 
-// GET /:userId
+// Creates new user
+router.route('/:userId').post(createUser);
 
-// User.findById( req.params.userId )
-// .populate()
-// User.findOne( { _id: req.params.userId } )
+// UPDATE user
+router.route('/:userId').put(updateUser);
 
-// DELETE /:userId
-
-// User.deleteOne( { _id: req.params.userId } )
-
-// PUT /:userId
-
-// User.findOneAndUpdate( search, { $set: req.body } )
+// DELETE user
+router.route('/:userId').delete(deleteUser);
