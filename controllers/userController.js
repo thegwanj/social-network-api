@@ -6,7 +6,7 @@ module.exports = {
             .then((users) => res.json(users))
             .catch((err) => res.status(500).json(err));
     },
-    
+
     getSingleUser(req, res) {
         User.findOne({ _id: req.params.userId })
         .then((user) =>
@@ -52,7 +52,7 @@ module.exports = {
           !user
             ? res
                 .status(404)
-                .json({ message: 'User created but no user with this id!' })
+                .json({ message: 'No more user with this id!' })
             : res.json({ message: 'User successfully deleted!' })
         )
         .catch((err) => res.status(500).json(err));  
