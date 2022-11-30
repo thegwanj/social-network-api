@@ -1,5 +1,4 @@
 # social-network-api
-Week 18 challenge
 ## Table of Contents
 - [Description](#description)
 - [Links](#links)
