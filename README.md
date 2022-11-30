@@ -29,6 +29,6 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 ```
 
 ## Links
-Screencastify Video: 
+Screencastify Video: https://watch.screencastify.com/v/KtG8f4eqjTyn04cd0zoY
 
 GitHub Repo: https://github.com/thegwanj/social-network-api
